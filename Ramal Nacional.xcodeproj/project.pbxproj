@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65097F6B1B3DEEBE00474D57 /* AvCorpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65097F6A1B3DEEBE00474D57 /* AvCorpPageViewController.swift */; };
+		6519E1041AFEC1BB002F4892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6519E1031AFEC1BB002F4892 /* AppDelegate.swift */; };
+		6519E1071AFEC1BB002F4892 /* Ramal_Nacional.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6519E1051AFEC1BB002F4892 /* Ramal_Nacional.xcdatamodeld */; };
+		6519E1091AFEC1BB002F4892 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6519E1081AFEC1BB002F4892 /* ViewController.swift */; };
+		6519E10C1AFEC1BB002F4892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6519E10A1AFEC1BB002F4892 /* Main.storyboard */; };
+		6519E10E1AFEC1BB002F4892 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6519E10D1AFEC1BB002F4892 /* Images.xcassets */; };
+		6519E1111AFEC1BB002F4892 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6519E10F1AFEC1BB002F4892 /* LaunchScreen.xib */; };
+		6519E11D1AFEC1BB002F4892 /* Ramal_NacionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6519E11C1AFEC1BB002F4892 /* Ramal_NacionalTests.swift */; };
+		652567231B0119FC0068A688 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652567221B0119FC0068A688 /* ViewController3.swift */; };
+		652567251B011A510068A688 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652567241B011A510068A688 /* ViewController4.swift */; };
+		65292F4D1B1A774300FD90B6 /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65292F4C1B1A774300FD90B6 /* ViewController5.swift */; };
+		65655BE71B1D160F000F4FDD /* logo_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 65655BE61B1D160F000F4FDD /* logo_new.png */; };
+		658F75961B0F9D6100B12D3F /* KhmerUIb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 658F75941B0F9D4200B12D3F /* KhmerUIb.ttf */; };
+		658F75981B0F9D6400B12D3F /* KhmerUI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 658F75931B0F9D4200B12D3F /* KhmerUI.ttf */; };
+		658F75A21B0FA90400B12D3F /* ViewController0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658F75A11B0FA90400B12D3F /* ViewController0.swift */; };
+		6597B30B1B20EDDE00F14F5F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597B30A1B20EDDE00F14F5F /* ContentViewController.swift */; };
+		6597B30D1B20F87A00F14F5F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597B30C1B20F87A00F14F5F /* WelcomeViewController.swift */; };
+		6597B30F1B2100C800F14F5F /* ViewController0port.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597B30E1B2100C800F14F5F /* ViewController0port.swift */; };
+		65D0EE061B41AA8400204632 /* Ramal Nacional_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D0EE051B41AA8400204632 /* Ramal Nacional_logo.png */; };
+		65D0EE081B41AADD00204632 /* Ramal Nacional_logo_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D0EE071B41AADD00204632 /* Ramal Nacional_logo_new.png */; };
+		65D2F0F71AFFF676005B8E7C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D2F0F61AFFF676005B8E7C /* SystemConfiguration.framework */; };
+		65D2F0FD1B000241005B8E7C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2F0FC1B000241005B8E7C /* ViewController2.swift */; };
+		65E823FB1B24BA59004E5CAF /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E823FA1B24BA59004E5CAF /* AdminViewController.swift */; };
+		E5BABCBF1B9C202000BD411E /* KhmerUI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 658F75931B0F9D4200B12D3F /* KhmerUI.ttf */; };
+		E5BABCC01B9C202000BD411E /* KhmerUIb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 658F75941B0F9D4200B12D3F /* KhmerUIb.ttf */; };
+		E5F0B4151B89346400C493B5 /* IJReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0B4141B89346400C493B5 /* IJReachability.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6519E1171AFEC1BB002F4892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6519E0F61AFEC1BB002F4892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6519E0FD1AFEC1BB002F4892;
+			remoteInfo = "Ramal Nacional";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65097F6A1B3DEEBE00474D57 /* AvCorpPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvCorpPageViewController.swift; sourceTree = "<group>"; };
+		6519E0FE1AFEC1BB002F4892 /* Ramal Nacional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ramal Nacional.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6519E1021AFEC1BB002F4892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6519E1031AFEC1BB002F4892 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6519E1061AFEC1BB002F4892 /* Ramal_Nacional.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ramal_Nacional.xcdatamodel; sourceTree = "<group>"; };
+		6519E1081AFEC1BB002F4892 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6519E10B1AFEC1BB002F4892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6519E10D1AFEC1BB002F4892 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6519E1101AFEC1BB002F4892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6519E1161AFEC1BB002F4892 /* Ramal NacionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ramal NacionalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6519E11B1AFEC1BB002F4892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6519E11C1AFEC1BB002F4892 /* Ramal_NacionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ramal_NacionalTests.swift; sourceTree = "<group>"; };
+		652567221B0119FC0068A688 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		652567241B011A510068A688 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		65292F4C1B1A774300FD90B6 /* ViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
+		65655BE61B1D160F000F4FDD /* logo_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_new.png; path = ../logo_new.png; sourceTree = "<group>"; };
+		658F75931B0F9D4200B12D3F /* KhmerUI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = KhmerUI.ttf; path = ../Fontes/KhmerUI.ttf; sourceTree = "<group>"; };
+		658F75941B0F9D4200B12D3F /* KhmerUIb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = KhmerUIb.ttf; path = ../Fontes/KhmerUIb.ttf; sourceTree = "<group>"; };
+		658F75A11B0FA90400B12D3F /* ViewController0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController0.swift; path = ../ViewController0.swift; sourceTree = "<group>"; };
+		6597B30A1B20EDDE00F14F5F /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		6597B30C1B20F87A00F14F5F /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		6597B30E1B2100C800F14F5F /* ViewController0port.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController0port.swift; sourceTree = "<group>"; };
+		65D0EE051B41AA8400204632 /* Ramal Nacional_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ramal Nacional_logo.png"; sourceTree = SOURCE_ROOT; };
+		65D0EE071B41AADD00204632 /* Ramal Nacional_logo_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ramal Nacional_logo_new.png"; sourceTree = SOURCE_ROOT; };
+		65D2F0F61AFFF676005B8E7C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		65D2F0FC1B000241005B8E7C /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../ViewController2.swift; sourceTree = "<group>"; };
+		65E823FA1B24BA59004E5CAF /* AdminViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		E5F0B4141B89346400C493B5 /* IJReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IJReachability.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6519E0FB1AFEC1BB002F4892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2F0F71AFFF676005B8E7C /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6519E1131AFEC1BB002F4892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6519E0F51AFEC1BB002F4892 = {
+			isa = PBXGroup;
+			children = (
+				65D2F0F61AFFF676005B8E7C /* SystemConfiguration.framework */,
+				6519E1001AFEC1BB002F4892 /* Ramal Nacional */,
+				6519E1191AFEC1BB002F4892 /* Ramal NacionalTests */,
+				6519E0FF1AFEC1BB002F4892 /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		6519E0FF1AFEC1BB002F4892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6519E0FE1AFEC1BB002F4892 /* Ramal Nacional.app */,
+				6519E1161AFEC1BB002F4892 /* Ramal NacionalTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6519E1001AFEC1BB002F4892 /* Ramal Nacional */ = {
+			isa = PBXGroup;
+			children = (
+				658F75921B0F9D2400B12D3F /* Fonts */,
+				65655BE61B1D160F000F4FDD /* logo_new.png */,
+				E5F0B4141B89346400C493B5 /* IJReachability.swift */,
+				65D2F0FC1B000241005B8E7C /* ViewController2.swift */,
+				6519E1031AFEC1BB002F4892 /* AppDelegate.swift */,
+				658F75A11B0FA90400B12D3F /* ViewController0.swift */,
+				6519E1081AFEC1BB002F4892 /* ViewController.swift */,
+				65D0EE071B41AADD00204632 /* Ramal Nacional_logo_new.png */,
+				65E823FA1B24BA59004E5CAF /* AdminViewController.swift */,
+				6519E10A1AFEC1BB002F4892 /* Main.storyboard */,
+				65097F6A1B3DEEBE00474D57 /* AvCorpPageViewController.swift */,
+				6597B30E1B2100C800F14F5F /* ViewController0port.swift */,
+				6597B30C1B20F87A00F14F5F /* WelcomeViewController.swift */,
+				6597B30A1B20EDDE00F14F5F /* ContentViewController.swift */,
+				65292F4C1B1A774300FD90B6 /* ViewController5.swift */,
+				652567221B0119FC0068A688 /* ViewController3.swift */,
+				652567241B011A510068A688 /* ViewController4.swift */,
+				6519E10D1AFEC1BB002F4892 /* Images.xcassets */,
+				65D0EE051B41AA8400204632 /* Ramal Nacional_logo.png */,
+				6519E10F1AFEC1BB002F4892 /* LaunchScreen.xib */,
+				6519E1051AFEC1BB002F4892 /* Ramal_Nacional.xcdatamodeld */,
+				6519E1011AFEC1BB002F4892 /* Supporting Files */,
+			);
+			path = "Ramal Nacional";
+			sourceTree = "<group>";
+		};
+		6519E1011AFEC1BB002F4892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6519E1021AFEC1BB002F4892 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6519E1191AFEC1BB002F4892 /* Ramal NacionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				6519E11C1AFEC1BB002F4892 /* Ramal_NacionalTests.swift */,
+				6519E11A1AFEC1BB002F4892 /* Supporting Files */,
+			);
+			path = "Ramal NacionalTests";
+			sourceTree = "<group>";
+		};
+		6519E11A1AFEC1BB002F4892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6519E11B1AFEC1BB002F4892 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		658F75921B0F9D2400B12D3F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				658F75931B0F9D4200B12D3F /* KhmerUI.ttf */,
+				658F75941B0F9D4200B12D3F /* KhmerUIb.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6519E0FD1AFEC1BB002F4892 /* Ramal Nacional */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6519E1201AFEC1BB002F4892 /* Build configuration list for PBXNativeTarget "Ramal Nacional" */;
+			buildPhases = (
+				6519E0FA1AFEC1BB002F4892 /* Sources */,
+				6519E0FB1AFEC1BB002F4892 /* Frameworks */,
+				6519E0FC1AFEC1BB002F4892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ramal Nacional";
+			productName = "Ramal Nacional";
+			productReference = 6519E0FE1AFEC1BB002F4892 /* Ramal Nacional.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6519E1151AFEC1BB002F4892 /* Ramal NacionalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6519E1231AFEC1BB002F4892 /* Build configuration list for PBXNativeTarget "Ramal NacionalTests" */;
+			buildPhases = (
+				6519E1121AFEC1BB002F4892 /* Sources */,
+				6519E1131AFEC1BB002F4892 /* Frameworks */,
+				6519E1141AFEC1BB002F4892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6519E1181AFEC1BB002F4892 /* PBXTargetDependency */,
+			);
+			name = "Ramal NacionalTests";
+			productName = "Ramal NacionalTests";
+			productReference = 6519E1161AFEC1BB002F4892 /* Ramal NacionalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6519E0F61AFEC1BB002F4892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "D'FY";
+				TargetAttributes = {
+					6519E0FD1AFEC1BB002F4892 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 326EU6ZY57;
+					};
+					6519E1151AFEC1BB002F4892 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 6519E0FD1AFEC1BB002F4892;
+					};
+				};
+			};
+			buildConfigurationList = 6519E0F91AFEC1BB002F4892 /* Build configuration list for PBXProject "Ramal Nacional" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6519E0F51AFEC1BB002F4892;
+			productRefGroup = 6519E0FF1AFEC1BB002F4892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6519E0FD1AFEC1BB002F4892 /* Ramal Nacional */,
+				6519E1151AFEC1BB002F4892 /* Ramal NacionalTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6519E0FC1AFEC1BB002F4892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5BABCBF1B9C202000BD411E /* KhmerUI.ttf in Resources */,
+				E5BABCC01B9C202000BD411E /* KhmerUIb.ttf in Resources */,
+				6519E10C1AFEC1BB002F4892 /* Main.storyboard in Resources */,
+				65D0EE081B41AADD00204632 /* Ramal Nacional_logo_new.png in Resources */,
+				6519E1111AFEC1BB002F4892 /* LaunchScreen.xib in Resources */,
+				65D0EE061B41AA8400204632 /* Ramal Nacional_logo.png in Resources */,
+				65655BE71B1D160F000F4FDD /* logo_new.png in Resources */,
+				6519E10E1AFEC1BB002F4892 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6519E1141AFEC1BB002F4892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658F75981B0F9D6400B12D3F /* KhmerUI.ttf in Resources */,
+				658F75961B0F9D6100B12D3F /* KhmerUIb.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6519E0FA1AFEC1BB002F4892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6597B30B1B20EDDE00F14F5F /* ContentViewController.swift in Sources */,
+				65D2F0FD1B000241005B8E7C /* ViewController2.swift in Sources */,
+				6597B30D1B20F87A00F14F5F /* WelcomeViewController.swift in Sources */,
+				652567251B011A510068A688 /* ViewController4.swift in Sources */,
+				6519E1091AFEC1BB002F4892 /* ViewController.swift in Sources */,
+				652567231B0119FC0068A688 /* ViewController3.swift in Sources */,
+				65292F4D1B1A774300FD90B6 /* ViewController5.swift in Sources */,
+				6519E1071AFEC1BB002F4892 /* Ramal_Nacional.xcdatamodeld in Sources */,
+				65097F6B1B3DEEBE00474D57 /* AvCorpPageViewController.swift in Sources */,
+				65E823FB1B24BA59004E5CAF /* AdminViewController.swift in Sources */,
+				6597B30F1B2100C800F14F5F /* ViewController0port.swift in Sources */,
+				6519E1041AFEC1BB002F4892 /* AppDelegate.swift in Sources */,
+				E5F0B4151B89346400C493B5 /* IJReachability.swift in Sources */,
+				658F75A21B0FA90400B12D3F /* ViewController0.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6519E1121AFEC1BB002F4892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6519E11D1AFEC1BB002F4892 /* Ramal_NacionalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6519E1181AFEC1BB002F4892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6519E0FD1AFEC1BB002F4892 /* Ramal Nacional */;
+			targetProxy = 6519E1171AFEC1BB002F4892 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6519E10A1AFEC1BB002F4892 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6519E10B1AFEC1BB002F4892 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6519E10F1AFEC1BB002F4892 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6519E1101AFEC1BB002F4892 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6519E11E1AFEC1BB002F4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6519E11F1AFEC1BB002F4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6519E1211AFEC1BB002F4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Ramal Nacional/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6519E1221AFEC1BB002F4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Ramal Nacional/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6519E1241AFEC1BB002F4892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ramal NacionalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ramal Nacional.app/Ramal Nacional";
+			};
+			name = Debug;
+		};
+		6519E1251AFEC1BB002F4892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ramal NacionalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ramal Nacional.app/Ramal Nacional";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6519E0F91AFEC1BB002F4892 /* Build configuration list for PBXProject "Ramal Nacional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6519E11E1AFEC1BB002F4892 /* Debug */,
+				6519E11F1AFEC1BB002F4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6519E1201AFEC1BB002F4892 /* Build configuration list for PBXNativeTarget "Ramal Nacional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6519E1211AFEC1BB002F4892 /* Debug */,
+				6519E1221AFEC1BB002F4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6519E1231AFEC1BB002F4892 /* Build configuration list for PBXNativeTarget "Ramal NacionalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6519E1241AFEC1BB002F4892 /* Debug */,
+				6519E1251AFEC1BB002F4892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6519E1051AFEC1BB002F4892 /* Ramal_Nacional.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6519E1061AFEC1BB002F4892 /* Ramal_Nacional.xcdatamodel */,
+			);
+			currentVersion = 6519E1061AFEC1BB002F4892 /* Ramal_Nacional.xcdatamodel */;
+			path = Ramal_Nacional.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6519E0F61AFEC1BB002F4892 /* Project object */;
+}

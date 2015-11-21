@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="35p-xi-yFC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="KhmerUI.ttf">
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+            <string>KhmerUI</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Av Corp Page View Controller-->
+        <scene sceneID="m36-0L-ZCI">
+            <objects>
+                <viewController id="tAb-pY-zXm" customClass="AvCorpPageViewController" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HAs-JC-1kM"/>
+                        <viewControllerLayoutGuide type="bottom" id="vmv-6D-1cs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UeB-Sm-n3B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzf-0E-dyi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciP-x2-RL7">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Exit" id="jdY-LS-wim">
+                                        <connections>
+                                            <segue destination="35p-xi-yFC" kind="modal" id="dM2-A1-Nkd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="foA-a3-vD9"/>
+                                    <barButtonItem systemItem="refresh" id="gP3-sF-gLC">
+                                        <connections>
+                                            <action selector="reload:" destination="tAb-pY-zXm" id="bAi-T5-abo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="TTh-wW-Epa"/>
+                                    <barButtonItem systemItem="stop" id="Djp-RN-aKo">
+                                        <connections>
+                                            <action selector="stop:" destination="tAb-pY-zXm" id="jZD-Hx-jqX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="bfB-h6-bMM"/>
+                                    <barButtonItem systemItem="rewind" id="m7l-9J-gHJ">
+                                        <connections>
+                                            <action selector="goBack:" destination="tAb-pY-zXm" id="TWF-YH-33X"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Aye-aM-bm7"/>
+                                    <barButtonItem systemItem="fastForward" id="DQc-iz-mJD">
+                                        <connections>
+                                            <action selector="goForward:" destination="tAb-pY-zXm" id="Irs-yz-7S1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Vwj-eP-Opz">
+                                <rect key="frame" x="169" y="450" width="37" height="37"/>
+                                <animations/>
+                                <color key="color" red="0.0" green="0.47442013490000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vzf-0E-dyi" firstAttribute="leading" secondItem="UeB-Sm-n3B" secondAttribute="leadingMargin" constant="-16" id="5B3-8p-DBa"/>
+                            <constraint firstItem="vmv-6D-1cs" firstAttribute="top" secondItem="ciP-x2-RL7" secondAttribute="bottom" id="6EN-fh-wcE"/>
+                            <constraint firstItem="Vzf-0E-dyi" firstAttribute="top" secondItem="UeB-Sm-n3B" secondAttribute="topMargin" id="IKD-qt-rJt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vzf-0E-dyi" secondAttribute="trailing" constant="-16" id="b63-db-12T"/>
+                            <constraint firstAttribute="centerX" secondItem="Vwj-eP-Opz" secondAttribute="centerX" id="eqt-Kd-kcM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ciP-x2-RL7" secondAttribute="trailing" constant="-16" id="gev-e5-blC"/>
+                            <constraint firstItem="ciP-x2-RL7" firstAttribute="leading" secondItem="UeB-Sm-n3B" secondAttribute="leadingMargin" constant="-16" id="vC8-GV-98B"/>
+                            <constraint firstItem="Vwj-eP-Opz" firstAttribute="top" secondItem="Vzf-0E-dyi" secondAttribute="bottom" constant="-173" id="w9A-rJ-x2l"/>
+                            <constraint firstItem="ciP-x2-RL7" firstAttribute="top" secondItem="Vzf-0E-dyi" secondAttribute="bottom" id="yPk-qe-E5A"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Vwj-eP-Opz" id="z8T-Ii-e7g"/>
+                        <outlet property="webView" destination="Vzf-0E-dyi" id="LVz-vD-KKh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9P2-oz-EOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1189.2" y="-662.78499999999997"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="SrG-Ws-KJj">
+            <objects>
+                <viewController storyboardIdentifier="welcomeViewController" id="35p-xi-yFC" customClass="WelcomeViewController" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NH3-yB-HTX"/>
+                        <viewControllerLayoutGuide type="bottom" id="kZ6-yx-Hxc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mdd-cB-vwr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acE-Qv-YwF">
+                                <rect key="frame" x="191" y="336" width="140" height="51"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="34"/>
+                                <state key="normal" title="Welcome">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lvL-pe-5yV" kind="modal" identifier="welcomeToTutorial" id="QFp-uc-9xW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDC-6L-zX9">
+                                <rect key="frame" x="33" y="255" width="165" height="51"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="34"/>
+                                <state key="normal" title="Bem Vindo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZUK-tw-R35" kind="modal" identifier="bemVindoToTutorial" id="7bf-t7-OC6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KhR-zH-Oma">
+                                <rect key="frame" x="105" y="625" width="165" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="19"/>
+                                <state key="normal" title="Powered by AvCorp">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tAb-pY-zXm" kind="modal" id="BMI-Us-Fqa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" image="Ramal Nacional_logo_new.png" translatesAutoresizingMaskIntoConstraints="NO" id="9nw-P6-VW0">
+                                <rect key="frame" x="68" y="37" width="239" height="158"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="oB2-uK-4m2"/>
+                                    <constraint firstAttribute="height" constant="158" id="xkb-jB-IWA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.062745098039215685" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9nw-P6-VW0" firstAttribute="leading" secondItem="Mdd-cB-vwr" secondAttribute="leadingMargin" constant="52" id="7Ce-pW-ZHf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9nw-P6-VW0" secondAttribute="trailing" constant="52" id="AcI-Gb-tAl"/>
+                            <constraint firstAttribute="centerX" secondItem="KhR-zH-Oma" secondAttribute="centerX" constant="0.5" id="JTh-vZ-cvU"/>
+                            <constraint firstItem="kZ6-yx-Hxc" firstAttribute="top" secondItem="KhR-zH-Oma" secondAttribute="bottom" constant="8" id="ari-Lc-c0e"/>
+                            <constraint firstItem="jDC-6L-zX9" firstAttribute="top" secondItem="9nw-P6-VW0" secondAttribute="bottom" constant="60" id="fpK-HZ-PKQ"/>
+                            <constraint firstItem="acE-Qv-YwF" firstAttribute="top" secondItem="jDC-6L-zX9" secondAttribute="bottom" constant="30" id="uuN-iQ-JnD"/>
+                            <constraint firstItem="9nw-P6-VW0" firstAttribute="top" secondItem="NH3-yB-HTX" secondAttribute="bottom" constant="17" id="w9b-JV-hoC"/>
+                            <constraint firstItem="jDC-6L-zX9" firstAttribute="leading" secondItem="Mdd-cB-vwr" secondAttribute="leadingMargin" constant="17" id="xoc-5E-1G2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="acE-Qv-YwF" secondAttribute="trailing" constant="28" id="yhJ-US-7Tb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bemvindoLabel" destination="jDC-6L-zX9" id="86J-Qf-6sj"/>
+                        <outlet property="welcomeLabel" destination="acE-Qv-YwF" id="Ll2-Lb-loB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uf5-ei-HnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-616.5" y="-542.5"/>
+        </scene>
+        <!--View Controller0-->
+        <scene sceneID="Wfx-08-l6d">
+            <objects>
+                <viewController id="lvL-pe-5yV" customClass="ViewController0" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tco-zH-ohj"/>
+                        <viewControllerLayoutGuide type="bottom" id="riB-jR-2a7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mjb-R8-4WH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEY-eG-Lzr">
+                                <rect key="frame" x="273" y="630" width="55" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9ka-uX-0x0"/>
+                                    <constraint firstAttribute="width" constant="55" id="aJu-7v-J3c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="15"/>
+                                <state key="normal" title="Begin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="tutorialEnglishToPrincipal" id="xMO-Ht-o64"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZp-hi-BL6">
+                                <rect key="frame" x="32" y="630" width="75" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="8vd-GV-ndF"/>
+                                    <constraint firstAttribute="height" constant="30" id="NjW-ay-kUy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="15"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartB:" destination="lvL-pe-5yV" eventType="touchUpInside" id="Zx0-jG-rc2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="riB-jR-2a7" firstAttribute="top" secondItem="CZp-hi-BL6" secondAttribute="bottom" constant="7" id="Ayp-W7-a8W"/>
+                            <constraint firstItem="CZp-hi-BL6" firstAttribute="leading" secondItem="mjb-R8-4WH" secondAttribute="leadingMargin" constant="16" id="QhX-eF-2kq"/>
+                            <constraint firstItem="riB-jR-2a7" firstAttribute="top" secondItem="qEY-eG-Lzr" secondAttribute="bottom" constant="7" id="sQk-B4-kRI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qEY-eG-Lzr" secondAttribute="trailing" constant="31" id="ssn-Ie-sGn"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZq-w3-qPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532.5" y="933.5"/>
+        </scene>
+        <!--View Controller5-->
+        <scene sceneID="yCZ-d0-be8">
+            <objects>
+                <viewController id="oDL-6r-JuN" customClass="ViewController5" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F1D-aM-fRW"/>
+                        <viewControllerLayoutGuide type="bottom" id="yQA-2V-mba"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jQf-1M-EYd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bII-C8-86c">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Exit" id="Ue9-QJ-lkF">
+                                        <color key="tintColor" red="0.0" green="0.47442013491352863" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" identifier="ajudaToHome" id="4Pi-00-uvK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="6dk-EE-Pn4"/>
+                                    <barButtonItem systemItem="refresh" id="LVW-q3-ATa">
+                                        <connections>
+                                            <action selector="refresh:" destination="oDL-6r-JuN" id="0an-uT-iXr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bzC-Fz-MFr"/>
+                                    <barButtonItem systemItem="stop" id="vaA-bg-UFS">
+                                        <connections>
+                                            <action selector="stopLoading:" destination="oDL-6r-JuN" id="GHy-hO-OAX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Xsn-Le-feR"/>
+                                    <barButtonItem systemItem="rewind" id="LMX-Ci-xpP">
+                                        <connections>
+                                            <action selector="goBack:" destination="oDL-6r-JuN" id="7tI-TY-HRF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="t3E-7e-WKk"/>
+                                    <barButtonItem systemItem="fastForward" id="X5d-GH-UcH">
+                                        <connections>
+                                            <action selector="goForward:" destination="oDL-6r-JuN" id="rSD-jc-klF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="upa-1g-k8m">
+                                <rect key="frame" x="169" y="471" width="37" height="37"/>
+                                <animations/>
+                                <color key="color" red="0.086274509799999996" green="0.25490196079999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tql-F7-Sgj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="bII-C8-86c" firstAttribute="top" secondItem="upa-1g-k8m" secondAttribute="bottom" constant="115" id="G57-Nh-PKd"/>
+                            <constraint firstItem="tql-F7-Sgj" firstAttribute="bottom" secondItem="bII-C8-86c" secondAttribute="top" id="G6T-YZ-NIp"/>
+                            <constraint firstItem="tql-F7-Sgj" firstAttribute="leading" secondItem="jQf-1M-EYd" secondAttribute="leading" id="Q3k-el-ziQ"/>
+                            <constraint firstAttribute="trailing" secondItem="bII-C8-86c" secondAttribute="trailing" id="TpK-59-sPV"/>
+                            <constraint firstItem="tql-F7-Sgj" firstAttribute="top" secondItem="jQf-1M-EYd" secondAttribute="top" id="Yf6-65-nxY"/>
+                            <constraint firstItem="tql-F7-Sgj" firstAttribute="leading" secondItem="bII-C8-86c" secondAttribute="leading" id="asP-2m-fNd"/>
+                            <constraint firstItem="bII-C8-86c" firstAttribute="bottom" secondItem="yQA-2V-mba" secondAttribute="top" id="hqJ-7a-91R"/>
+                            <constraint firstItem="tql-F7-Sgj" firstAttribute="trailing" secondItem="bII-C8-86c" secondAttribute="trailing" id="rPz-cA-2oV"/>
+                            <constraint firstAttribute="centerX" secondItem="upa-1g-k8m" secondAttribute="centerX" id="wlr-kY-pZQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="activityIndicatorWebThree" destination="upa-1g-k8m" id="bnX-iP-7Qs"/>
+                        <outlet property="webView3" destination="tql-F7-Sgj" id="s28-am-yv8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMA-6V-uHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126.8" y="689.05499999999995"/>
+        </scene>
+        <!--View Controller 0port-->
+        <scene sceneID="oUC-V2-jX5">
+            <objects>
+                <viewController id="ZUK-tw-R35" customClass="ViewController0port" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="887-SU-jAw"/>
+                        <viewControllerLayoutGuide type="bottom" id="naO-zl-eCF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wNe-oz-Rr6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sra-WM-16G">
+                                <rect key="frame" x="31" y="630" width="77" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1eT-o2-abP"/>
+                                    <constraint firstAttribute="width" constant="77" id="u0m-Xq-u3A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="15"/>
+                                <state key="normal" title="Recomeçar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recomecarButton:" destination="ZUK-tw-R35" eventType="touchUpInside" id="Maa-Lv-2bj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFg-4F-MC2">
+                                <rect key="frame" x="274" y="630" width="63" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3N4-uE-R9w"/>
+                                    <constraint firstAttribute="width" constant="63" id="drS-Vk-Y5w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="15"/>
+                                <state key="normal" title="Iniciar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="tutorialPortugueseToPrincipal" id="X00-lC-SeJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="naO-zl-eCF" firstAttribute="top" secondItem="TFg-4F-MC2" secondAttribute="bottom" constant="7" id="MBv-6n-LsY"/>
+                            <constraint firstItem="Sra-WM-16G" firstAttribute="leading" secondItem="wNe-oz-Rr6" secondAttribute="leadingMargin" constant="15" id="hWB-Aj-Ovh"/>
+                            <constraint firstItem="naO-zl-eCF" firstAttribute="top" secondItem="Sra-WM-16G" secondAttribute="bottom" constant="7" id="mTi-Jh-C8D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TFg-4F-MC2" secondAttribute="trailing" constant="22" id="qBZ-ZE-Lqc"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="my5-qn-TXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-704.39999999999998" y="290.03500000000003"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="3cZ-Ks-ATB">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="KS4-NO-HrK" customClass="ContentViewController" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UGE-Jd-PfT"/>
+                        <viewControllerLayoutGuide type="bottom" id="p5u-EF-qaL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="znX-HJ-phc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tutorial" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4m-fX-aZC">
+                                <rect key="frame" x="160" y="20" width="56" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="diT-EC-HE7">
+                                <rect key="frame" x="16" y="49" width="343" height="559"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="diT-EC-HE7" firstAttribute="top" secondItem="i4m-fX-aZC" secondAttribute="bottom" constant="8" symbolic="YES" id="5WA-IN-mem"/>
+                            <constraint firstItem="i4m-fX-aZC" firstAttribute="leading" secondItem="znX-HJ-phc" secondAttribute="leading" constant="160" id="8zF-aQ-jR1"/>
+                            <constraint firstItem="i4m-fX-aZC" firstAttribute="top" secondItem="UGE-Jd-PfT" secondAttribute="bottom" id="GOj-qg-OnX"/>
+                            <constraint firstItem="p5u-EF-qaL" firstAttribute="top" secondItem="diT-EC-HE7" secondAttribute="bottom" constant="59" id="NVV-f8-K1G"/>
+                            <constraint firstItem="diT-EC-HE7" firstAttribute="leading" secondItem="znX-HJ-phc" secondAttribute="leadingMargin" id="q32-0u-Vsf"/>
+                            <constraint firstItem="diT-EC-HE7" firstAttribute="trailing" secondItem="znX-HJ-phc" secondAttribute="trailingMargin" id="yi4-mN-BFt"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="diT-EC-HE7" id="WE3-Ua-frW"/>
+                        <outlet property="label" destination="i4m-fX-aZC" id="aha-rz-RjN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCa-32-oBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-221.5" y="-304.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="MainScreenViewController" id="vXZ-lx-hvc" customClass="ViewController" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzk-Ql-XpD">
+                                <rect key="frame" x="295" y="622" width="56" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EO5-WL-Yx5"/>
+                                    <constraint firstAttribute="width" constant="56" id="tuX-0Z-zgZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="18"/>
+                                <state key="normal" title="Ajuda">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oDL-6r-JuN" kind="modal" identifier="ajuda" id="4CN-VK-AUh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuário" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C3H-zd-4VH">
+                                <rect key="frame" x="82" y="217" width="210" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="IhQ-8F-sqq"/>
+                                    <constraint firstAttribute="height" constant="30" id="NBO-1I-UIs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQe-XC-4eQ">
+                                <rect key="frame" x="82" y="257" width="210" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="2fI-TG-z5M"/>
+                                    <constraint firstAttribute="height" constant="30" id="T7b-oo-eGc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cux-qZ-Bp8">
+                                <rect key="frame" x="120" y="629" width="135" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Ovv-p8-qUo"/>
+                                    <constraint firstAttribute="width" constant="135" id="m34-bX-Qcr"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Português"/>
+                                    <segment title="English"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="vXZ-lx-hvc" eventType="valueChanged" id="TM9-ni-7Q1"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fC-Nb-kpA">
+                                <rect key="frame" x="33" y="629" width="22" height="28"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="1Bs-Dz-3MD"/>
+                                    <constraint firstAttribute="width" constant="22" id="QiI-E4-O7U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" image="settingsIcon22">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fnw-sU-htE" kind="modal" identifier="principalToConfig" id="rDv-wx-T4j"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Servidor" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jj5-ea-nvb">
+                                <rect key="frame" x="83" y="297" width="210" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="Vxu-mL-p85"/>
+                                    <constraint firstAttribute="height" constant="30" id="lZZ-QT-pwG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="Ramal Nacional_logo_new.png" translatesAutoresizingMaskIntoConstraints="NO" id="uZW-0q-hh6">
+                                <rect key="frame" x="82" y="20" width="212" height="138"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="gbq-O4-tVv"/>
+                                    <constraint firstAttribute="height" constant="138" id="kNr-ae-YWz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" text="Entre com as suas credenciais." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lgJ-n3-3YW">
+                                <rect key="frame" x="28" y="165" width="319" height="22"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="Chk-eT-0Mp"/>
+                                    <constraint firstAttribute="height" constant="22" id="L0p-In-1sl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsG-xo-Nvp">
+                                <rect key="frame" x="154" y="364" width="68" height="40"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.49999999999999961"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MKU-ce-7tH"/>
+                                    <constraint firstAttribute="width" constant="68" id="RaF-1F-hfB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="20"/>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="entrarButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p7J-aI-uYW"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-J0-EO8">
+                                <rect key="frame" x="177" y="342" width="20" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="RVz-lS-E8e"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-Vv-9sc">
+                                <rect key="frame" x="86" y="405" width="203" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="5PB-Hj-VFl"/>
+                                    <constraint firstAttribute="height" constant="31" id="WuG-w0-tgQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="16"/>
+                                <state key="normal" title="Esqueceu sua senha?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oLt-sf-Ivf" kind="modal" identifier="recuperarSenha" id="UJX-iP-bEz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0042521007928489011" green="0.064318691865407077" blue="0.13051679478609624" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jj5-ea-nvb" firstAttribute="top" secondItem="NQe-XC-4eQ" secondAttribute="bottom" constant="10" id="5Uw-K1-xJ1"/>
+                            <constraint firstItem="gsG-xo-Nvp" firstAttribute="top" secondItem="9Xa-J0-EO8" secondAttribute="bottom" constant="2" id="7Vh-2B-2Rp"/>
+                            <constraint firstItem="lgJ-n3-3YW" firstAttribute="top" secondItem="uZW-0q-hh6" secondAttribute="bottom" constant="7" id="9L9-m0-vsS"/>
+                            <constraint firstAttribute="centerX" secondItem="C3H-zd-4VH" secondAttribute="centerX" id="AAM-5c-Zbn"/>
+                            <constraint firstItem="4fC-Nb-kpA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="17" id="Hxj-qj-8ld"/>
+                            <constraint firstAttribute="centerX" secondItem="Cux-qZ-Bp8" secondAttribute="centerX" id="Jrk-sx-bed"/>
+                            <constraint firstItem="NQe-XC-4eQ" firstAttribute="top" secondItem="C3H-zd-4VH" secondAttribute="bottom" constant="10" id="LHp-kj-9jv"/>
+                            <constraint firstItem="Dna-Vv-9sc" firstAttribute="top" secondItem="gsG-xo-Nvp" secondAttribute="bottom" constant="1" id="Wx0-2Q-cxK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Gzk-Ql-XpD" secondAttribute="bottom" constant="10" id="Ygd-dn-Elh"/>
+                            <constraint firstAttribute="centerX" secondItem="uZW-0q-hh6" secondAttribute="centerX" id="a3Z-7S-Rei"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Cux-qZ-Bp8" secondAttribute="bottom" constant="10" id="e5S-4B-br8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="4fC-Nb-kpA" secondAttribute="bottom" constant="10" id="gIr-sB-i9X"/>
+                            <constraint firstAttribute="centerX" secondItem="NQe-XC-4eQ" secondAttribute="centerX" id="gy7-6K-Y3c"/>
+                            <constraint firstAttribute="centerX" secondItem="gsG-xo-Nvp" secondAttribute="centerX" id="iOy-LZ-MWx"/>
+                            <constraint firstAttribute="centerX" secondItem="lgJ-n3-3YW" secondAttribute="centerX" id="lmw-u2-90x"/>
+                            <constraint firstItem="uZW-0q-hh6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="nTQ-1I-IUi"/>
+                            <constraint firstItem="9Xa-J0-EO8" firstAttribute="top" secondItem="jj5-ea-nvb" secondAttribute="bottom" constant="15" id="qif-X1-Hrh"/>
+                            <constraint firstAttribute="centerX" secondItem="9Xa-J0-EO8" secondAttribute="centerX" id="riX-oH-0P7"/>
+                            <constraint firstAttribute="centerX" secondItem="jj5-ea-nvb" secondAttribute="centerX" id="ry1-dM-i1r"/>
+                            <constraint firstItem="C3H-zd-4VH" firstAttribute="top" secondItem="lgJ-n3-3YW" secondAttribute="bottom" constant="30" id="tiS-ED-SSs"/>
+                            <constraint firstAttribute="centerX" secondItem="Dna-Vv-9sc" secondAttribute="centerX" id="u8L-sl-ol5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gzk-Ql-XpD" secondAttribute="trailing" constant="8" id="uFR-ov-zAJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="9Xa-J0-EO8" id="vzW-4g-epn"/>
+                        <outlet property="ajudaButton" destination="Gzk-Ql-XpD" id="wju-XX-q91"/>
+                        <outlet property="credenciaisLabel" destination="lgJ-n3-3YW" id="reG-by-9Kw"/>
+                        <outlet property="entrarButtonLabel" destination="gsG-xo-Nvp" id="hih-Li-O7W"/>
+                        <outlet property="forgotButton" destination="Dna-Vv-9sc" id="VAS-bn-j2T"/>
+                        <outlet property="passwordField" destination="NQe-XC-4eQ" id="RCK-xa-Yu3"/>
+                        <outlet property="segmentedControl" destination="Cux-qZ-Bp8" id="U58-xL-w5J"/>
+                        <outlet property="servertextField" destination="jj5-ea-nvb" id="NLz-Bg-koG"/>
+                        <outlet property="usernameField" destination="C3H-zd-4VH" id="6Kd-Oa-uYQ"/>
+                        <segue destination="cQm-re-BFy" kind="modal" identifier="principal" id="gJP-eo-5A3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347.5" y="-310.5"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="ohB-v9-7qK">
+            <objects>
+                <viewController id="cQm-re-BFy" customClass="ViewController2" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dZB-Jz-eVu"/>
+                        <viewControllerLayoutGuide type="bottom" id="fLg-QQ-SyT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="13m-BY-u95">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mx9-oV-xrH">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Exit" id="jIJ-vB-uFk">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" identifier="home" id="doz-9q-uds"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="m06-MO-nFg"/>
+                                    <barButtonItem systemItem="refresh" id="sP7-aw-xg9">
+                                        <connections>
+                                            <action selector="reloadB:" destination="cQm-re-BFy" id="YQX-pA-mvZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="KNQ-OX-aRW"/>
+                                    <barButtonItem systemItem="stop" id="tKB-wR-gBw">
+                                        <connections>
+                                            <action selector="stopB:" destination="cQm-re-BFy" id="eum-Hl-Vlf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="heT-oX-6WF"/>
+                                    <barButtonItem systemItem="rewind" id="7Ax-56-GVS">
+                                        <connections>
+                                            <action selector="backB:" destination="cQm-re-BFy" id="lov-n7-e1W"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kSM-YE-nDD"/>
+                                    <barButtonItem systemItem="fastForward" id="hLT-G8-JSm">
+                                        <connections>
+                                            <action selector="forwardB:" destination="cQm-re-BFy" id="z2V-Vm-lgG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gF3-YA-edT">
+                                <rect key="frame" x="169" y="442" width="37" height="37"/>
+                                <animations/>
+                                <color key="color" red="0.086274509799999996" green="0.25490196079999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aG8-Rd-RTm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cQm-re-BFy" id="rig-N4-DQz"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aG8-Rd-RTm" firstAttribute="bottom" secondItem="Mx9-oV-xrH" secondAttribute="top" id="EMG-2U-gm5"/>
+                            <constraint firstAttribute="centerX" secondItem="gF3-YA-edT" secondAttribute="centerX" id="HaC-7U-jew"/>
+                            <constraint firstItem="aG8-Rd-RTm" firstAttribute="leading" secondItem="13m-BY-u95" secondAttribute="leading" id="ITe-xq-leU"/>
+                            <constraint firstItem="aG8-Rd-RTm" firstAttribute="top" secondItem="13m-BY-u95" secondAttribute="top" id="Uod-tN-meU"/>
+                            <constraint firstItem="aG8-Rd-RTm" firstAttribute="trailing" secondItem="Mx9-oV-xrH" secondAttribute="trailing" id="Xs9-9o-fL6"/>
+                            <constraint firstItem="gF3-YA-edT" firstAttribute="top" secondItem="aG8-Rd-RTm" secondAttribute="bottom" constant="-181" id="bHu-s2-E8A"/>
+                            <constraint firstItem="aG8-Rd-RTm" firstAttribute="leading" secondItem="Mx9-oV-xrH" secondAttribute="leading" id="kDb-81-h54"/>
+                            <constraint firstAttribute="trailing" secondItem="Mx9-oV-xrH" secondAttribute="trailing" id="mB8-k7-ZLf"/>
+                            <constraint firstItem="Mx9-oV-xrH" firstAttribute="bottom" secondItem="fLg-QQ-SyT" secondAttribute="top" id="r8v-vQ-Ets"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="activityIndicatorWeb" destination="gF3-YA-edT" id="UcF-TB-DZT"/>
+                        <outlet property="webView" destination="aG8-Rd-RTm" id="ygh-n6-LwE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2DV-UG-15k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.5" y="1244.5"/>
+        </scene>
+        <!--AdminView-->
+        <scene sceneID="klc-Vp-qfs">
+            <objects>
+                <viewController title="AdminView" id="fnw-sU-htE" customClass="AdminViewController" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IfN-Gn-EvF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Etf-HC-gVU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4q2-2U-sjY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JdY-pJ-mf9">
+                                <rect key="frame" x="38" y="240" width="300" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Pya-9D-4va"/>
+                                    <constraint firstAttribute="height" constant="30" id="Vdn-vF-Fb4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vJ2-Wh-fvq">
+                                <rect key="frame" x="111" y="619" width="153" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="CNm-cd-Jqg"/>
+                                    <constraint firstAttribute="height" constant="28" id="uvs-Sq-Fhk"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Português"/>
+                                    <segment title="English"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeLanguage:" destination="fnw-sU-htE" eventType="valueChanged" id="AxC-EX-FeB"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entre com URL do servidor A2Billing." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i94-1U-IvW">
+                                <rect key="frame" x="13" y="160" width="350" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Pvf-N1-iSE"/>
+                                    <constraint firstAttribute="width" constant="350" id="m2u-Xp-QRs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE4-gW-6GD">
+                                <rect key="frame" x="295" y="619" width="64" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="F8M-by-20M"/>
+                                    <constraint firstAttribute="width" constant="64" id="yZW-yr-8be"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="17"/>
+                                <state key="normal" title="Tutorial">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tutorialButton:" destination="fnw-sU-htE" eventType="touchUpInside" id="rfo-7v-cFX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSj-Au-PrI">
+                                <rect key="frame" x="23" y="619" width="49" height="33"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="e7e-g2-620"/>
+                                    <constraint firstAttribute="width" constant="49" id="sb5-9g-ipm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="17"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" identifier="adminToPrincipal" id="X4Y-un-aRz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqI-uU-hdo">
+                                <rect key="frame" x="135" y="353" width="106" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="Dni-el-skz"/>
+                                    <constraint firstAttribute="height" constant="30" id="GlT-Az-U9y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="18"/>
+                                <state key="normal" title="Reconfigurar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reconfigButton:" destination="fnw-sU-htE" eventType="touchUpInside" id="vIW-fh-MED"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMm-DJ-yBK">
+                                <rect key="frame" x="138" y="300" width="99" height="48"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="a0c-iZ-WQk"/>
+                                    <constraint firstAttribute="width" constant="99" id="m6g-3N-5fX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="24"/>
+                                <state key="normal" title="Salvar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="entrarButton:" destination="fnw-sU-htE" eventType="touchUpInside" id="wTL-gu-u0d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configurações" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHQ-Il-TNK">
+                                <rect key="frame" x="44" y="60" width="287" height="61"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="Kkw-9l-DNX"/>
+                                    <constraint firstAttribute="width" constant="287" id="xTb-DK-7Qy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0049426845067787693" green="0.066686756349101775" blue="0.13844325609031494" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Etf-HC-gVU" firstAttribute="top" secondItem="vJ2-Wh-fvq" secondAttribute="bottom" constant="20" id="201-N1-lTD"/>
+                            <constraint firstAttribute="centerX" secondItem="ZHQ-Il-TNK" secondAttribute="centerX" id="3xF-Du-HmC"/>
+                            <constraint firstItem="i94-1U-IvW" firstAttribute="top" secondItem="ZHQ-Il-TNK" secondAttribute="bottom" constant="39" id="Bc9-cw-PQK"/>
+                            <constraint firstAttribute="centerX" secondItem="NqI-uU-hdo" secondAttribute="centerX" id="FFg-7y-0de"/>
+                            <constraint firstAttribute="centerX" secondItem="i94-1U-IvW" secondAttribute="centerX" id="G0h-4q-zl9"/>
+                            <constraint firstItem="bE4-gW-6GD" firstAttribute="trailing" secondItem="4q2-2U-sjY" secondAttribute="trailingMargin" id="G8J-zl-Q7d"/>
+                            <constraint firstItem="ZHQ-Il-TNK" firstAttribute="top" secondItem="IfN-Gn-EvF" secondAttribute="bottom" constant="60" id="HgC-rW-O6w"/>
+                            <constraint firstItem="CMm-DJ-yBK" firstAttribute="top" secondItem="JdY-pJ-mf9" secondAttribute="bottom" constant="30" id="IMg-Vf-QOu"/>
+                            <constraint firstAttribute="centerX" secondItem="vJ2-Wh-fvq" secondAttribute="centerX" id="Lvh-qq-T3a"/>
+                            <constraint firstItem="Etf-HC-gVU" firstAttribute="top" secondItem="mSj-Au-PrI" secondAttribute="bottom" constant="15" id="MSg-B6-igj"/>
+                            <constraint firstItem="Etf-HC-gVU" firstAttribute="top" secondItem="bE4-gW-6GD" secondAttribute="bottom" constant="18" id="R8E-Oi-f0f"/>
+                            <constraint firstAttribute="centerX" secondItem="JdY-pJ-mf9" secondAttribute="centerX" id="hwy-LJ-xcY"/>
+                            <constraint firstItem="mSj-Au-PrI" firstAttribute="leading" secondItem="4q2-2U-sjY" secondAttribute="leadingMargin" constant="7" id="iA1-4b-l33"/>
+                            <constraint firstItem="JdY-pJ-mf9" firstAttribute="top" secondItem="i94-1U-IvW" secondAttribute="bottom" constant="59" id="nGM-4J-jQu"/>
+                            <constraint firstItem="NqI-uU-hdo" firstAttribute="top" secondItem="CMm-DJ-yBK" secondAttribute="bottom" constant="5" id="nca-yp-S7b"/>
+                            <constraint firstAttribute="centerX" secondItem="CMm-DJ-yBK" secondAttribute="centerX" id="rYE-Sk-r4J"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backLabel" destination="mSj-Au-PrI" id="7Fi-vM-YpI"/>
+                        <outlet property="buttonLabel" destination="CMm-DJ-yBK" id="yfa-Yh-ith"/>
+                        <outlet property="instructionsLabel" destination="i94-1U-IvW" id="7xh-Ah-3FR"/>
+                        <outlet property="reconfigLabel" destination="NqI-uU-hdo" id="RfQ-N3-Rjd"/>
+                        <outlet property="segmentedControl" destination="vJ2-Wh-fvq" id="VEn-3T-fco"/>
+                        <outlet property="titleLabel" destination="ZHQ-Il-TNK" id="RfY-y8-pPb"/>
+                        <outlet property="urlTextField" destination="JdY-pJ-mf9" id="D89-Pi-ckK"/>
+                        <segue destination="lvL-pe-5yV" kind="modal" identifier="tutorialEng" id="hcm-fu-AZl"/>
+                        <segue destination="ZUK-tw-R35" kind="modal" identifier="tutorialPort" id="7oh-tI-gBQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5q9-1n-Tak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756.5" y="-310.5"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="uTF-v5-aoo">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="lwv-Lw-C0f" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iP3-7i-FL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1126" y="33.015000000000001"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="k69-rj-xoa">
+            <objects>
+                <viewController id="oLt-sf-Ivf" customClass="ViewController3" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b5y-2C-Dx7"/>
+                        <viewControllerLayoutGuide type="bottom" id="6gX-uP-Nz6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZYp-PD-6eR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WU4-hH-ggn">
+                                <rect key="frame" x="104" y="298" width="166" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IjG-he-vWl"/>
+                                    <constraint firstAttribute="width" constant="166" id="MHz-SR-PfX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="22"/>
+                                <state key="normal" title="Recuperar senha">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="senhaButton:" destination="oLt-sf-Ivf" eventType="touchUpInside" id="Uml-Bg-bbR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuperação de senha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vej-sW-ONw">
+                                <rect key="frame" x="44" y="42" width="287" height="78"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="H5O-EQ-3tR"/>
+                                    <constraint firstAttribute="height" constant="78" id="fEw-xk-RQo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="5Fg-NY-rv2">
+                                <rect key="frame" x="178" y="357" width="20" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="nTD-B5-HVY"/>
+                                    <constraint firstAttribute="width" constant="20" id="ydc-au-wmz"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dCy-4u-4Tm">
+                                <rect key="frame" x="49" y="222" width="278" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="278" id="c5C-CY-ay2"/>
+                                    <constraint firstAttribute="height" constant="30" id="sWM-1w-bdU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IR-yp-9ar">
+                                <rect key="frame" x="16" y="627" width="44" height="32"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Uq9-Q3-DuA"/>
+                                    <constraint firstAttribute="width" constant="44" id="pwc-9Q-Y1y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="17"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="37X-Fg-qJJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite o e-mail usado no cadastro." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8de-p3-PsO">
+                                <rect key="frame" x="64" y="139" width="247" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="GUv-sL-hTo"/>
+                                    <constraint firstAttribute="height" constant="31" id="H2y-9b-9tu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KhmerUI" family="Khmer UI" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.011807384341843747" green="0.076264617292335773" blue="0.14595982806001184" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5Fg-NY-rv2" secondAttribute="centerX" id="299-wR-Rnw"/>
+                            <constraint firstAttribute="centerX" secondItem="dCy-4u-4Tm" secondAttribute="centerX" id="3GP-a3-iKK"/>
+                            <constraint firstAttribute="centerX" secondItem="8de-p3-PsO" secondAttribute="centerX" id="Fze-pa-rDF"/>
+                            <constraint firstAttribute="centerX" secondItem="Vej-sW-ONw" secondAttribute="centerX" id="Hxr-3S-LJo"/>
+                            <constraint firstItem="6gX-uP-Nz6" firstAttribute="top" secondItem="7IR-yp-9ar" secondAttribute="bottom" constant="8" id="Sle-fy-2Ib"/>
+                            <constraint firstItem="dCy-4u-4Tm" firstAttribute="top" secondItem="8de-p3-PsO" secondAttribute="bottom" constant="52" id="dqb-Hs-PwG"/>
+                            <constraint firstItem="5Fg-NY-rv2" firstAttribute="top" secondItem="WU4-hH-ggn" secondAttribute="bottom" constant="24" id="hBd-nz-FpD"/>
+                            <constraint firstItem="8de-p3-PsO" firstAttribute="top" secondItem="Vej-sW-ONw" secondAttribute="bottom" constant="19" id="l1c-fw-bUO"/>
+                            <constraint firstItem="WU4-hH-ggn" firstAttribute="top" secondItem="dCy-4u-4Tm" secondAttribute="bottom" constant="46" id="ohp-nc-4Vv"/>
+                            <constraint firstAttribute="centerX" secondItem="WU4-hH-ggn" secondAttribute="centerX" id="thX-T7-l4h"/>
+                            <constraint firstItem="Vej-sW-ONw" firstAttribute="top" secondItem="b5y-2C-Dx7" secondAttribute="bottom" constant="42" id="v8N-wG-3XI"/>
+                            <constraint firstItem="7IR-yp-9ar" firstAttribute="leading" secondItem="ZYp-PD-6eR" secondAttribute="leadingMargin" id="xPl-4e-DZO"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="activityIndicatorViewSenha" destination="5Fg-NY-rv2" id="KY6-V7-YlH"/>
+                        <outlet property="emailField" destination="dCy-4u-4Tm" id="cTM-I1-61z"/>
+                        <outlet property="promptLabel" destination="8de-p3-PsO" id="TS7-Au-H9p"/>
+                        <outlet property="recuperarButton" destination="WU4-hH-ggn" id="NF4-kL-fZl"/>
+                        <outlet property="titleLabel" destination="Vej-sW-ONw" id="Bjv-cN-9Ml"/>
+                        <outlet property="voltarButton" destination="7IR-yp-9ar" id="Q5J-s7-tQI"/>
+                        <segue destination="ODu-W6-RID" kind="modal" identifier="senhatoweb" id="Pwa-16-dg3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zG5-2W-K0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347.5" y="417.5"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="n5I-Xa-2Y3">
+            <objects>
+                <viewController id="ODu-W6-RID" customClass="ViewController4" customModule="Ramal_Nacional" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wky-vq-AkE"/>
+                        <viewControllerLayoutGuide type="bottom" id="mye-pI-IKf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="us2-1a-0XL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3P-05-fP4">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <animations/>
+                                <rect key="contentStretch" x="0.050000000000000017" y="0.0" width="1" height="1"/>
+                                <items>
+                                    <barButtonItem title="Exit" id="odI-T6-tRP">
+                                        <connections>
+                                            <segue destination="oLt-sf-Ivf" kind="modal" identifier="home2" id="YHb-fF-aBM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="0Jh-yI-Cls"/>
+                                    <barButtonItem systemItem="refresh" id="EF9-vo-6cS">
+                                        <connections>
+                                            <action selector="reloadB:" destination="ODu-W6-RID" id="vnz-33-eO3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Hvz-mJ-YPw"/>
+                                    <barButtonItem systemItem="stop" id="5jD-0R-5vd">
+                                        <connections>
+                                            <action selector="stopB:" destination="ODu-W6-RID" id="871-bd-6Pd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="OrK-Xx-H25"/>
+                                    <barButtonItem systemItem="rewind" id="VFy-nS-qyG">
+                                        <connections>
+                                            <action selector="backB:" destination="ODu-W6-RID" id="Dyn-YR-agF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kKp-d6-viy"/>
+                                    <barButtonItem systemItem="fastForward" id="I0c-Ln-ghO">
+                                        <connections>
+                                            <action selector="forwardB:" destination="ODu-W6-RID" id="6SD-kE-R8O"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="sGw-eQ-zcQ">
+                                <rect key="frame" x="169" y="484" width="37" height="37"/>
+                                <animations/>
+                                <color key="color" red="0.086274509799999996" green="0.25490196079999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-gI-wOU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ua5-gI-wOU" firstAttribute="leading" secondItem="us2-1a-0XL" secondAttribute="leadingMargin" constant="-16" id="4Mh-bE-39Z"/>
+                            <constraint firstItem="e3P-05-fP4" firstAttribute="top" secondItem="sGw-eQ-zcQ" secondAttribute="bottom" constant="102" id="901-MF-lUu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ua5-gI-wOU" secondAttribute="trailing" constant="-16" id="HYt-ef-bq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e3P-05-fP4" secondAttribute="trailing" constant="-16" id="Mxv-QH-Kma"/>
+                            <constraint firstItem="e3P-05-fP4" firstAttribute="top" secondItem="ua5-gI-wOU" secondAttribute="bottom" id="QqR-sE-RnR"/>
+                            <constraint firstItem="e3P-05-fP4" firstAttribute="leading" secondItem="us2-1a-0XL" secondAttribute="leadingMargin" constant="-16" id="aXe-Dj-VVg"/>
+                            <constraint firstItem="mye-pI-IKf" firstAttribute="top" secondItem="e3P-05-fP4" secondAttribute="bottom" id="nem-rs-CpZ"/>
+                            <constraint firstAttribute="centerX" secondItem="sGw-eQ-zcQ" secondAttribute="centerX" id="nvd-k5-yYH"/>
+                            <constraint firstItem="ua5-gI-wOU" firstAttribute="top" secondItem="us2-1a-0XL" secondAttribute="topMargin" id="p0a-rX-220"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="sGw-eQ-zcQ" id="hqm-IO-gsJ"/>
+                        <outlet property="voltarButton" destination="odI-T6-tRP" id="oXj-fA-zL2"/>
+                        <outlet property="webView2" destination="ua5-gI-wOU" id="R7i-9G-Unr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ryg-2B-uSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279.5" y="324.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ramal Nacional_logo_new.png" width="2486" height="1730"/>
+        <image name="settingsIcon22" width="22" height="22"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="UJX-iP-bEz"/>
+        <segue reference="X4Y-un-aRz"/>
+        <segue reference="7oh-tI-gBQ"/>
+        <segue reference="hcm-fu-AZl"/>
+    </inferredMetricsTieBreakers>
+</document>
