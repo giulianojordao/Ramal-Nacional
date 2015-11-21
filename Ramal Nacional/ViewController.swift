@@ -17,7 +17,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     var urlServer =  String()
     
-    var urlAvCorp = "http://www.ramalnacional.com.br/mobile"
+    var urlAvCorp = "Your webpage"
     
     @IBOutlet weak var usernameField: UITextField!
     

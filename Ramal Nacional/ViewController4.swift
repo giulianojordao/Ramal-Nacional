@@ -44,7 +44,7 @@ class ViewController4: UIViewController {
         
         var post: NSString = "pr_email=\(emailData)"
         
-        var url: NSURL = NSURL(string: "http://web.ramalnacional.com.br/customer/forgotpassword.php?action=email")!
+        var url: NSURL = NSURL(string: "Your webpage")!
         
         var postData: NSData = post.dataUsingEncoding(NSUTF8StringEncoding)!
         

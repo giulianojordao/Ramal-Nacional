@@ -17,7 +17,7 @@ class AvCorpPageViewController: UIViewController {
     
  override func viewDidLoad() {
         
-    let url = NSURL(string: "http://www.avcorp.com.br")
+    let url = NSURL(string: "Your wepgage")
     if (url != nil) {
         let request = NSURLRequest(URL: url!)
         webView.loadRequest(request)
